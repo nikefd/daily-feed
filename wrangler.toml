@@ -1,4 +1,4 @@
-name = "daily-feed"
+name = "ai-daily-feed"
 main = "src/index.ts"
 compatibility_date = "2026-06-01"
 
