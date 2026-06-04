@@ -11,7 +11,7 @@ crons = ["0 1 * * *"]
 # then paste the returned id below.
 [[kv_namespaces]]
 binding = "FEED_KV"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "b66c3415842a4ed19dc48c294b59f083"
 
 # Optional: how many top stories / items to keep per source.
 [vars]
