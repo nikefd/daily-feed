@@ -1,0 +1,20 @@
+name = "daily-feed"
+main = "src/index.ts"
+compatibility_date = "2026-06-01"
+
+# Run once a day at 01:00 UTC to refresh all sources.
+[triggers]
+crons = ["0 1 * * *"]
+
+# KV namespace for storing fetched snapshots.
+# Create it with:  npx wrangler kv namespace create FEED_KV
+# then paste the returned id below.
+[[kv_namespaces]]
+binding = "FEED_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Optional: how many top stories / items to keep per source.
+[vars]
+HN_LIMIT = "30"
+RSS_LIMIT = "15"
+PAGE_LIMIT = "15"
